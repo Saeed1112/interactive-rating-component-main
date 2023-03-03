@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body class="font-overpass flex items-center justify-center h-screen w-screen flex-col bg-very-dark-blue">
+
+
+<main class="w-[25rem] mt-auto bg-dark-blue px-8 py-8 rounded-[2rem]">
+
+    <!-- Rating state start -->
+    <form id="rate-form">
+
+        <div class="h-12 w-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 mb-8">
+            <img src="images/icon-star.svg" alt="A Orange star">
+        </div>
+        <h1 class="text-[1.75rem] font-medium text-gray-50 mb-2">How did we do?</h1>
+
+        <p class="text-medium-grey text-[15px] mb-6">Please let us know how we did with your support request. All
+            feedback is
+            appreciated
+            to help us improve our offering!</p>
+
+
+        <div class="flex font-medium justify-between first:text-2xl rate-box">
+            <label>
+                <input type="radio" value="1" name="rate" hidden/>
+                1
+            </label>
+            <label>
+                <input type="radio" value="2" name="rate" hidden/>
+                2
+            </label>
+            <label>
+                <input type="radio" value="3" name="rate" hidden/>
+                3
+            </label>
+            <label>
+                <input type="radio" value="4" name="rate" hidden/>
+                4
+            </label>
+            <label>
+                <input type="radio" value="5" name="rate" hidden/>
+                5
+            </label>
+        </div>
+
+        <button class="rounded-full tracking-[2px] uppercase mt-8 bg-orange h-11 flex items-center hover:text-orange hover:bg-white justify-center w-full text-gray-50">
+            Submit
+        </button>
+    </form>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+
+    <div class="hidden flex items-center justify-center gap-3 flex-col" id="result-box">
+        <img src="/images/illustration-thank-you.svg" class="mt-2" alt="Thank you - illustration">
+        <div class="flex text-orange px-5 rounded-full bg-white bg-opacity-5 gap-1 h-8 items-center justify-center mt-5">
+            You selected <span id="rate">1</span> out of 5
+        </div>
+
+        <h1 class="text-[1.75rem] font-medium text-gray-50 text-gray-50 mt-5">Thank you!</h1>
+
+        <p class="text-medium-grey text-[15px] text-center">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+        </p>
+    </div>
+
+</main>
+
+
+<!-- Thank you state end -->
+
+
+<div class="mt-auto mb-5 text-medium-grey">
+    Challenge by <a class="text-orange" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+    Mentor</a>.
+    Coded by <a class="text-orange" href="mailto:sakhshijan@gmail.com">NullEe</a>.
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
